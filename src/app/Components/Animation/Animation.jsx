@@ -8,7 +8,7 @@ export default function GsapScrollWrapper({
   children,
   animation = "fadeUp",   // "fadeUp" | "fadeLeft" | "fadeRight" | "fadeDown" | "zoom" | "rotate"
   once = true,            // play only once when entering viewport
-  start = "top 85%",      // ScrollTrigger start
+  start = "top 75%",      // ScrollTrigger start
   stagger = 0.12,         // stagger for child animations
   selector = "[data-animate]", // child selector to animate (default: elements with data-animate)
   className = "",

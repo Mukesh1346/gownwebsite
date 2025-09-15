@@ -21,15 +21,21 @@ export default function Home() {
        
         <CategoriesCarousel />
         {/* <TopManufacturer /> */}
+        <Animation animation="fadeUp" once={false}>
         <SupplyUniform />
+        </Animation>
+
+        <Animation animation="fadeUp" once={false}>
         <WhyChooseUs />
-        <Animation animation="fadeUp" once={true}>
+        </Animation>
+        <Animation animation="fadeUp" once={false}>
 
         <Banner />
         </Animation>
         <Products />
-
+        <Animation animation="fadeUp" once={false}>
         <FAQ />
+        </Animation>
         <Testimonials />
       </div>
     </>
