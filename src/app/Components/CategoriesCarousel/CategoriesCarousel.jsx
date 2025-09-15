@@ -42,7 +42,7 @@ export default function CategoriesCarousel() {
         >
           {categories.map((item, idx) => (
             <SwiperSlide key={idx}>
-              <div className="category-item">
+              <div className="category-item pt-2">
                 <Image src={item.img} alt={item.name} />
                 <p>{item.name}</p>
               </div>

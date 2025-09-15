@@ -10,8 +10,9 @@ import pic8 from '@/app/Images/items/item8.webp'
 import { TiArrowRightOutline } from "react-icons/ti";
 import './products.css'
 import Image from 'next/image'
+import Link from 'next/link'
 
-export default function Products() {
+export default function Products({display}) {
  
     const products =[
         {id:1,title:"Black Adult Matte High School Graduation Cap" , subtitle: "Adult graduation cap is a special cap for graduation students." , image:pic1 },
@@ -29,8 +30,8 @@ export default function Products() {
 
     <div className='Products-mainSec'>
            <div className='container'>
-            <div className='text-center my-5'>
-                <h3 className='headingTitle'>Our Best Selling Products</h3>
+            <div className={`text-center ${display}  my-5`}>
+                <h3 className='headingTitle '>Our Best Selling Products</h3>
             </div>
             <div className='row'>
               {products.map((item,index)=>(
@@ -42,7 +43,7 @@ export default function Products() {
                          <div className='productDetails'>
                             <h3>{item.title}</h3>
                             <p>{item.subtitle}</p>
-                             <button className='ReadMoreBtn'>Read More  < TiArrowRightOutline  className='fs-3'/></button>
+                        <Link href={`/Pages/products/${item.id}`}>     <button className='ReadMoreBtn' >Read More  < TiArrowRightOutline  className='fs-3'/></button> </Link>
                          </div>
                    </div>
                   </div>

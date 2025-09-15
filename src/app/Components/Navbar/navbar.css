@@ -4,6 +4,12 @@
   font-family: "Poppins", sans-serif !important;
 }
 
+
+.BrandName{
+
+-webkit-text-stroke: 1px #A997DF ;
+  color:white;
+}
 .navbar .nav-link {
   font-weight: 500;
   font-size: 15px;

@@ -14,7 +14,7 @@ export default function Footer() {
           <span className="fw-bold footer-heading fs-4">CAPSTOLE</span>
           {/* <span className="fw-bold text-dark">uniform wala</span> */}
           <small className="text-muted">
-            A <span className="text-danger fw-semibold">BuzzUniforms</span> Company
+            A <span className="text-warning fw-semibold">BuzzUniforms</span> Company
           </small>
         </Link>
 

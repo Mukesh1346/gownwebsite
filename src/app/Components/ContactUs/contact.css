@@ -6,7 +6,7 @@
   .form-title {
     font-size: 28px;
     font-weight: 600;
-    color: #5b2c20; /* Brown color */
+    color:var(--themeBackground); /* Brown color */
     margin-bottom: 10px;
   }
   
@@ -35,7 +35,7 @@
   }
   
   .send-btn {
-    background: #5b2c20 !important;
+    background:var(--themeBackground) !important;
     color: #fff !important;
     font-weight: 600;
     text-transform: uppercase;

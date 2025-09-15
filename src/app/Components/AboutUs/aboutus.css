@@ -1,0 +1,103 @@
+.AboutUsMainSec {
+    padding: 40px 0;
+  }
+  
+  /* Wrapper with polygon cut + rounded corners */
+  .Img-wrapper {
+    border-radius: 20px;        /* Smooth curves at corners */
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+  
+
+  }
+  
+  /* Image inside */
+  .BannerImg {
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .textSectionLeft{
+    padding:20px 40px;
+  }
+
+  .textSectionLeft img{
+   border-radius: 30px;
+  }
+
+.textSectionLeft p{
+font-size: 25px;
+font-weight: 400;
+text-align: justify;
+
+margin-top:20px;
+color:gray;
+
+}
+
+.textSectionRight{
+    align-items: center;
+    display: flex;
+    padding: 0px 40px;
+  background-color: var(--themeColor);
+  border-radius: 30px;
+
+}
+.textSectionRight p{
+ color:white;
+ 
+  text-align: justify; 
+}
+
+   
+
+/* CountOnViewSection  */
+
+
+.about-stats {
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    color: #fff;
+    padding: 5rem 1rem;
+  }
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f5c542;
+  }
+  .section-subtitle {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #ddd;
+    font-size: 1.1rem;
+  }
+  .section-subtitle span {
+    color: #f5c542;
+    font-weight: 600;
+  }
+  .stat-card {
+    background: #111;
+    padding: 2rem 1rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+  }
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:var(--themeColor);
+  }
+  .stat-label {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #ccc;
+  }
+
+

@@ -12,19 +12,19 @@ export default function SupplyUniform() {
       img: item1, // put images in public/uniforms/
       title: "Corporate Uniforms",
       desc: "From security personnel to top-level executives, our corporate uniforms are designed to cater to all levels of an organization.",
-      link: "#",
+      link: "/Pages/contact-us",
     },
     {
         img: item2,
       title: "Hospital Uniforms",
       desc: "We are a high-quality uniform supplier in Mumbai for hospital staff, including doctors, nurses, and support teams.",
-      link: "#",
+      link: "/Pages/contact-us",
     },
     {
         img: item3,
       title: "Hotel Uniforms",
       desc: "Enhance the elegance of your hotel with our hotel uniforms. Our uniforms are durable and aligned with your brand’s aesthetics.",
-      link: "#",
+      link: "/Pages/contact-us",
     },
   ];
 

@@ -25,7 +25,8 @@
 
 .cardSecDetils{
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-
+    background-color: #A997DF;
+    border-radius: 20px;
     box-shadow: 20px;
    padding:20px 20px;
    width: 100%;
@@ -45,15 +46,24 @@
     margin-top:10px;
     padding: 0 10px;
     font-size: 13px;
-    color: gray;
+  
     font-weight: 500;
    
  }
 
 
  .cardSecDetils:hover{
-    background-color: aliceblue;
-    color:rgb(0, 0, 0);
+    background-color: #8773c1;
+    color:rgb(255, 255, 255);
  }
 
+ .cardSecDetils:hover p{
+    /* background-color: #A997DF ; */
+    color:rgb(255, 255, 255);
+ }
+
+ .cardSecDetils:hover img{
+    /* background-color: #A997DF; */
+    color:rgb(255, 255, 255);
+ }
 

@@ -9,7 +9,7 @@ import { MdWifiCalling3 } from "react-icons/md";
 export default function Navbar() {
   return (
   <>
-   <div style={{ backgroundColor: "#ff6600"}}>
+   <div style={{ backgroundColor: "#A997DF"}}>
   <div className="container">
     <div className="row">
       <div className="col-md-6"></div>
@@ -41,7 +41,7 @@ export default function Navbar() {
       <div className="container">
         {/* Logo */}
         <Link href="/" className="navbar-brand d-flex flex-column lh-1">
-          <span className="fw-bold fs-4" style={{ color: "#ff6600"}}>CAPSTOLE</span>
+          <span className="fw-bold BrandName fs-4" >CAPSTOLE</span>
           {/* <span className="fw-bold text-dark">uniform wala</span> */}
           <small className="text-muted">
             A <span className="text-danger fw-semibold">BuzzUniforms</span> Company
@@ -70,7 +70,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/about" className="nav-link">
+              <Link href="/Pages/about-us" className="nav-link">
                 About Us
               </Link>
             </li>
@@ -144,7 +144,7 @@ export default function Navbar() {
               </Link>
               <ul className="dropdown-menu">
                 <li>
-                  <Link href="/products/school" className="dropdown-item">
+                  <Link href="/Pages/products" className="dropdown-item">
                   Graduation Cap and Gown
                   </Link>
                 </li>

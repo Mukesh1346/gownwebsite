@@ -17,7 +17,7 @@ export default function Banner() {
                   <div className='d-flex'>
                   <MdWifiCalling3  className='fs-3 text-light'/> <p className='bannerpara'><span className='pe-2'> Support Hotline:</span> +91 - 9318311035</p>
                   </div>
-                    <button className='bannerBtn'>Read More</button>
+                    <a href="/Pages/contact-us"><button className='bannerBtn'>Read More</button></a>
                 </div>
         </div>
       

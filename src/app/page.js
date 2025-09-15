@@ -9,6 +9,7 @@ import Banner from "./Components/Banner/Banner";
 import Products from "./Components/Products/Products";
 import FAQ from "./Components/FAQ/FAQ";
 import WhyChooseUs from "./Components/WhyChooseUs/WhyChooseUs";
+import Animation from '@/app/Components/Animation/Animation'
 
 
 
@@ -22,7 +23,10 @@ export default function Home() {
         {/* <TopManufacturer /> */}
         <SupplyUniform />
         <WhyChooseUs />
+        <Animation animation="fadeUp" once={true}>
+
         <Banner />
+        </Animation>
         <Products />
 
         <FAQ />

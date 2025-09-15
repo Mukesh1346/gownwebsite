@@ -27,7 +27,7 @@
 .Connectbtn{
     padding:12px 20px;
     font-size: 12px;
-    background-color: #E74C3C;
+    background-color:var(--themeBackground);
     color: white;
     border-radius: 30px;
     border:none;

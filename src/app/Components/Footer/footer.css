@@ -8,7 +8,7 @@
   }
   
   .footer-heading {
-    color: #ff6600;
+    color:var(--themeColor);
     font-weight: bold;
     margin-bottom: 15px;
   }
@@ -22,7 +22,7 @@
   }
   
   .footer-link:hover {
-    color: #ff6600;
+    color:var(--themeColor);
   }
   
   .footer-bottom {
@@ -45,6 +45,6 @@
   }
   
   .social-icon:hover {
-    background: #ff6600;
+    background: var(--themeColor);
   }
   

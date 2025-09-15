@@ -1,8 +1,8 @@
 import React from 'react'
-import icon1 from '@/app/Images/items/icon1.png'
-import icon2 from '@/app/Images/items/icon2.png'
-import icon3 from '@/app/Images/items/icon3.png'
-import icon4 from '@/app/Images/items/icon4.png'
+import icon1 from '@/app/Images/items/icon5.png'
+import icon2 from '@/app/Images/items/icon6.png'
+import icon3 from '@/app/Images/items/icon7.png'
+import icon4 from '@/app/Images/items/icon8.png'
 import Image from 'next/image'
 import './whychoose.css'
 
@@ -33,8 +33,8 @@ export default function WhyChooseUs() {
                             <div className="row">
                                 {features.map((item, index) => (
                                     <div className="col-md-3 " key={index}>
-                                        <div className='cardSecDetils card'>
-                                            <div className='d-flex justify-content-center'><Image src={item.icon} alt={item.title} className='iconImg' height={100} width={100} /></div>
+                                        <div className='cardSecDetils '>
+                                            <div className='d-flex justify-content-center'><Image src={item.icon} alt={item.title} className='iconImg text-light' height={100} width={100} /></div>
                                             <h4>{item.title}</h4>
                                             <p>{item.subtitle}</p>
                                         </div>
