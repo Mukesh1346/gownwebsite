@@ -30,14 +30,14 @@ export default function Footer() {
             <h5 className="footer-heading">Quick Navigation</h5>
             <ul className="list-unstyled footerUl ">
               <li><a href="#" className="footer-link">Home</a></li>
-              <li><a href="#" className="footer-link">About Us</a></li>
-              <li><a href="#" className="footer-link">Products</a></li>
-              <li><a href="#" className="footer-link">News</a></li>
-              <li><a href="#" className="footer-link">Knowledge</a></li>
+              <li><a href="/Pages/about-us" className="footer-link">About Us</a></li>
+              <li><a href="/Pages/contact-us" className="footer-link">Contact Us</a></li>
+              <li><a href="/Pages/products" className="footer-link">All Products</a></li>
+              {/* <li><a href="#" className="footer-link">Knowledge</a></li>
               <li><a href="#" className="footer-link">Contact Us</a></li>
               <li><a href="#" className="footer-link">Showroom</a></li>
               <li><a href="#" className="footer-link">Mobile</a></li>
-              <li><a href="#" className="footer-link">Sitemap</a></li>
+              <li><a href="#" className="footer-link">Sitemap</a></li> */}
             </ul>
           </div>
 
