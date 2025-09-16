@@ -2,6 +2,10 @@
     background: #fff;
     text-align: left;
   }
+
+  .form-container{
+    width: 50% !important;
+  }
   
   .form-title {
     font-size: 28px;
@@ -49,4 +53,20 @@
     background: #3d1e15 !important;
     color: #fff !important;
   }
+
+  @media (max-width : 768px){
+    .form-container{
+      width: 100% !important;
+    }
+    
+    .form-container p{
+      text-align: center;
+    }
+    .form-container h2{
+      text-align: center;
+    }
+    .send-btn {
+       width: 100%;
+  }
   
+}

@@ -40,7 +40,7 @@ export default function ProductDetails() {
       <div className="container product-details mt-3">
         <div className="row">
           {/* Left Section */}
-          <div className="col-md-6 d-flex">
+          <div className="col-md-6 d-flex flex-wrap justify-content-center">
             <div className="thumbnail-list">
               {product.images.map((img, idx) => (
                 <Image
@@ -53,13 +53,13 @@ export default function ProductDetails() {
               ))}
             </div>
             <div className="main-image">
-              <Image src={selectedImage} alt="main" />
+              <Image src={selectedImage} alt="main" className="mainImage" />
             </div>
           </div>
 
           {/* Right Section */}
-          <div className="col-md-6 ">
-            <div className="w-75 mt-5">
+          <div className="col-md-6">
+            <div className="details-box mt-5">
               <h4>{product.title}</h4>
 
               <div className="price">
@@ -95,31 +95,39 @@ export default function ProductDetails() {
         <div className="custom-modal-overlay">
           <div className="custom-modal">
             <div className="modal-header">
-              <h5>Send Your Query</h5>
+              <h5 className="mt-2">Customer Query</h5>
               <button className="btn-close" onClick={() => setShowModal(false)}></button>
             </div>
             <div className="modal-body">
-              <form onSubmit={(e) => { e.preventDefault(); alert("Query submitted!"); setShowModal(false); }}>
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  alert("Query submitted!");
+                  setShowModal(false);
+                }}
+              >
                 <div className="mb-3">
                   <label className="form-label">Name</label>
                   <input type="text" className="form-control" required />
                 </div>
-                <div className="mb-3">
+                {/* <div className="mb-3">
                   <label className="form-label">Email</label>
                   <input type="email" className="form-control" required />
+                </div> */}
+                <div className="mb-3">
+                  <label className="form-label">Phone</label>
+                  <input type="tel" className="form-control" required />
                 </div>
                 <div className="mb-3">
                   <label className="form-label">Your Query</label>
                   <textarea className="form-control" rows="3" required></textarea>
                 </div>
-                <button type="submit" className="btn btn-success w-100">Submit</button>
+                <button type="submit" className="btn submitBtn w-100">Submit</button>
               </form>
             </div>
           </div>
         </div>
       )}
-
-
     </>
   );
 }

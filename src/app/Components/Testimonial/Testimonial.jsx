@@ -9,6 +9,7 @@ import pic3 from '@/app/Images/T3.webp'
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import './testimonials.css'
 
 
 export default function Testimonials() {
@@ -54,7 +55,7 @@ export default function Testimonials() {
     <section className="container py-5">
       <div className="row">
         {/* Left side text */}
-        <div className="col-md-4 d-flex flex-column justify-content-center">
+        <div className="col-md-4 testimonialTopText d-flex flex-column justify-content-center">
           <h3 className="text-uppercase  fw-bold text-muted">Testimonials</h3>
           <h2 className="fw-bold">Our Prestigious Clients</h2>
           <p className="text-muted">Voices of Joy, Moments of Pride</p>

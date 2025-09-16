@@ -35,3 +35,32 @@
     background-color: white;
     
 }
+
+
+
+@media (max-width:768px){
+    .overlayText {
+        position: absolute;
+        top: 10px;
+        left: 23px;
+    }
+
+    .BannerImg {
+        width: 100vw;
+        height: 150px;
+    }
+    .overlayText h3 {
+        color: white;
+        font-size: 10px;
+    }
+
+    .bannerBtn {
+        padding: 4px;
+        font-size: 12px;
+    }
+
+    .bannerpara {
+        color: white;
+        font-size: 11px;
+    }
+}

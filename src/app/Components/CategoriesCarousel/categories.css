@@ -1,86 +1,97 @@
 /* Categories Section */
 .categories-section {
-    padding: 20px 20px;
-    background-color:  #eeeeeec0;
-    text-align: center;
-  }
-  
+  padding: 20px 20px;
+  background-color:  #eeeeeec0;
+  text-align: center;
+}
+
+.categories-section h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+/* Swiper Container */
+.categories-carousel {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Remove underline from links inside the carousel */
+.categories-carousel a {
+  text-decoration: none !important;
+  color: inherit; /* optional: keep text color same */
+}
+
+.categories-carousel a p {
+  text-decoration: none !important;
+}
+
+/* Slide Items */
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none !important;
+  text-align: center;
+}
+
+.category-item img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%; /* makes it perfectly round */
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-item img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.category-item p {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none !important;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
   .categories-section h2 {
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 40px;
-  }
-  
-  /* Swiper Container */
-  .categories-carousel {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Slide Items */
-  .category-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .category-item img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%; /* makes it perfectly round */
-    object-fit: cover;
-    border: 4px solid #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .category-item img:hover {
-    transform: scale(1.08);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-  }
-  
-  .category-item p {
-    margin-top: 16px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #333;
-  }
-  
-  /* Responsive */
-  @media (max-width: 1024px) {
-    .categories-section h2 {
       font-size: 28px;
-    }
-    .category-item img {
+  }
+  .category-item img {
       width: 140px;
       height: 140px;
-    }
   }
-  
-  @media (max-width: 768px) {
-    .categories-section h2 {
+}
+
+@media (max-width: 768px) {
+  .categories-section h2 {
       font-size: 24px;
-    }
-    .category-item img {
+  }
+  .category-item img {
       width: 120px;
       height: 120px;
-    }
-    .category-item p {
-      font-size: 16px;
-    }
   }
-  
-  @media (max-width: 480px) {
-    .categories-section h2 {
+  .category-item p {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories-section h2 {
       font-size: 20px;
-    }
-    .category-item img {
+  }
+  .category-item img {
       width: 100px;
       height: 100px;
-    }
-    .category-item p {
-      font-size: 14px;
-    }
   }
-  
+  .category-item p {
+      font-size: 14px;
+  }
+}

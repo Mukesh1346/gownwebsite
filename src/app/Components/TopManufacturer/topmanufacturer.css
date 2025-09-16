@@ -35,3 +35,22 @@
 }
 
 
+@media (max-width:768px){
+  .TopManufacturerImg {
+    width: 99%;
+    height: 260px;
+    border-radius: 40px;
+}
+
+.ManufacturerTextSec h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 350;
+  margin: 20px 0px;
+}
+
+.ManufacturerTextSec {
+  text-align: center;
+
+}
+}

@@ -10,15 +10,15 @@ export default function Footer() {
         <div className="row">
           {/* Left Section */}
           <div className="col-md-4 mb-4">
-          <Link href="/" className="navbar-brand d-flex flex-column lh-1">
-          <span className="fw-bold footer-heading fs-4">CAPSTOLE</span>
-          {/* <span className="fw-bold text-dark">uniform wala</span> */}
-          <small className="text-muted">
-            A <span className="text-warning fw-semibold">BuzzUniforms</span> Company
-          </small>
-        </Link>
+            <Link href="/" className="navbar-brand d-flex flex-column lh-1">
+              <span className="fw-bold footer-heading fs-4">CAPSTOLE</span>
+              {/* <span className="fw-bold text-dark">uniform wala</span> */}
+              <small className="text-muted">
+                A <span className="text-warning fw-semibold">BuzzUniforms</span> Company
+              </small>
+            </Link>
 
-            <p>
+            <p className="companydetails">
               Established in 2002, we have more than 15 years in graduation & church
               robes and accessories making, we are factory here, so the quality and
               delivery date can be controlled by ourselves.
@@ -28,7 +28,7 @@ export default function Footer() {
           {/* Quick Navigation */}
           <div className="col-md-2 mb-4">
             <h5 className="footer-heading">Quick Navigation</h5>
-            <ul className="list-unstyled">
+            <ul className="list-unstyled footerUl ">
               <li><a href="#" className="footer-link">Home</a></li>
               <li><a href="#" className="footer-link">About Us</a></li>
               <li><a href="#" className="footer-link">Products</a></li>
@@ -44,7 +44,7 @@ export default function Footer() {
           {/* Products */}
           <div className="col-md-3 mb-4">
             <h5 className="footer-heading">Products</h5>
-            <ul className="list-unstyled">
+            <ul className="list-unstyled footerUl">
               <li><a href="#" className="footer-link">Graduation Cap and Gown</a></li>
               <li><a href="#" className="footer-link">Academic Regalia</a></li>
               <li><a href="#" className="footer-link">Graduation Accessories</a></li>
@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div className="col-md-3 mb-4">
+          <div className="col-md-3 contactFooterSec mb-4">
             <h5 className="footer-heading">Contact Us</h5>
             <p className="mb-1">
               Capstole textile Co.Ltd <br />
@@ -85,5 +85,5 @@ export default function Footer() {
 
 
 
- 
+
 

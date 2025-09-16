@@ -27,6 +27,10 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
+.navbar-nav{
+  gap:40px;
+}
+
 .navbar .dropdown-item {
   font-size: 14px;
   font-weight: 500;
@@ -50,4 +54,17 @@
 
 .btn-enquiry:hover {
   background-color: #c0392b;
+}
+
+
+@media (max-width: 768px) {
+      
+
+  .navbar-nav{
+    gap:10px !important;
+  }
+.nav-item  a{
+  text-align: center;
+}
+
 }

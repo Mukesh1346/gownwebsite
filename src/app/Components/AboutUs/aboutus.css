@@ -39,6 +39,13 @@ color:gray;
 
 }
 
+.contactUsSec{
+         display: flex;
+         align-items: center;
+         justify-content: end;
+}
+
+
 .textSectionRight{
     align-items: center;
     display: flex;
@@ -66,7 +73,7 @@ color:gray;
   .section-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #f5c542;
+    color: var(--themeColor);
   }
   .section-subtitle {
     max-width: 700px;
@@ -75,11 +82,12 @@ color:gray;
     font-size: 1.1rem;
   }
   .section-subtitle span {
-    color: #f5c542;
+    color:var(--themeColor);
     font-weight: 600;
   }
   .stat-card {
     background: #111;
+    border: 1px dashed white;
     padding: 2rem 1rem;
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
@@ -100,4 +108,50 @@ color:gray;
     color: #ccc;
   }
 
+  .countSec{
+    margin-top:5px !important;
+  }
 
+  @media (max-width: 768px){
+    .textSectionLeft p{
+      font-size: 13px;
+   margin-top:0px;
+      
+      }
+
+   
+.contactUsSec{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:20px;
+}
+
+.textSectionRight p {
+ font-size: 13px;
+}   
+
+.about-stats {
+  padding: 1rem 1rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color:var(--themeColor);
+}
+
+.countSec{
+  margin-top:0px !important;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+
+}
+
+.stat-card {
+  padding:1rem  1rem ; 
+}
+
+  }

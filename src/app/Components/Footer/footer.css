@@ -48,3 +48,18 @@
     background: var(--themeColor);
   }
   
+  @media (max-width:768px){
+   .footer-heading{
+    text-align: center;
+   }
+   .companydetails{
+       text-align: center;
+   }
+   .footerUl{
+    text-align: center;
+   }
+
+   .contactFooterSec{
+    text-align: center;
+   }
+  }

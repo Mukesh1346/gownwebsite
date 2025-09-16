@@ -90,3 +90,29 @@
     line-height: 1.6;
   }
   
+  .faqTopSec{
+    margin-bottom: 20px !important;
+  }
+ 
+
+  @media (max-width:768px){
+    .faq-title {
+      font-size: 1.5rem;
+  }
+.faqTopSec{
+  margin-bottom: 10px !important;
+}
+
+.faq-question h5 {
+  font-size: 0.8rem;
+}
+
+.faq-item {
+  padding: 12px 20px;
+}
+.faq-wrapper {
+  gap: 13px;
+}
+
+  }
+  

@@ -210,11 +210,11 @@ export default function Navbar() {
           </ul>
 
           {/* Button */}
-          <div className="d-flex">
+          {/* <div className="d-flex">
             <Link href="/enquiry" className="btn btn-enquiry">
               Quick Enquiry
             </Link>
-          </div>
+          </div> */}
 
         
         </div>

@@ -67,3 +67,14 @@
     color:rgb(255, 255, 255);
  }
 
+
+ @media (max-width:768px){
+    .cardSecDetils {
+        margin-bottom: 20px;
+    }
+
+    .whyChooseMainSec {
+        margin: 12px 10px;
+    }
+ }
+

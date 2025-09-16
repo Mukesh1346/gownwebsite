@@ -40,7 +40,7 @@ export default function FAQ() {
 
   return (
     <section className="faq-section py-5">
-      <div className="container text-center mb-5">
+      <div className="container faqTopSec text-center ">
         <h2 className="faq-title">Frequently Asked Questions</h2>
         <div className="faq-underline"></div>
         <p className="faq-subtitle">

@@ -47,3 +47,9 @@
     font-size: 14px;
   }
   
+
+  @media (max-width : 768px){
+    .carousel-container {
+      height:150px;
+    }
+  }

@@ -12,15 +12,16 @@ import item4 from "@/app/Images/items/item4.webp"
 import item5 from "@/app/Images/items/item5.webp"
 import Image from "next/image";
 import "./categories.css"; // import external css
+import Link from "next/link";
 
 export default function CategoriesCarousel() {
     const categories = [
-            { name: "Doctoral Gowns", img: item1},
-            { name: "Doctoral Packages", img: item2 },
-            { name: "High School", img: item3 },
-            { name: "Faculty Doctoral-tams", img: item4 },
-            { name: "Master Degree", img: item5 },
-            { name: "Medals", img: item3 },
+            { id : 1,name: "Doctoral Gowns", img: item1},
+            { id : 2,name: "Doctoral Packages", img: item2 },
+            { id : 3,name: "High School", img: item3 },
+            { id : 4,name: "Faculty Doctoral-tams", img: item4 },
+            { id : 5,name: "Master Degree", img: item5 },
+            { id : 6,name: "Medals", img: item3 },
           ];
         
   return (
@@ -35,17 +36,19 @@ export default function CategoriesCarousel() {
           pagination={{ clickable: true }}
           autoplay={{ delay: 3000 }}
           breakpoints={{
-            320: { slidesPerView: 1 },
-            640: { slidesPerView: 2 },
+            320: { slidesPerView: 2 },
+            640: { slidesPerView: 3 },
             1024: { slidesPerView: 4 },
           }}
         >
           {categories.map((item, idx) => (
             <SwiperSlide key={idx}>
-              <div className="category-item pt-2">
+             <Link href={`/Pages/products`}>
+             <div className="category-item pt-2">
                 <Image src={item.img} alt={item.name} />
-                <p>{item.name}</p>
+                <p className="text-none">{item.name}</p>
               </div>
+             </Link>
             </SwiperSlide>
           ))}
         </Swiper>
