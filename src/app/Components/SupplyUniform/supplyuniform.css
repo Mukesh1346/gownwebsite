@@ -114,11 +114,21 @@
     font-size: 24px;
   }
 
+
+.supplyPara p {
+ padding:0px 20px;
+}
+
   .supplyCard {
-    width: 100%;
-  }
+    width: 80%;
+}
 
   .supplyCardImg {
-    height: 260px;
+    height: 200px;
   }
+
+  .supplyCardDesc {
+    font-size: 12px;
+  
+}
 }

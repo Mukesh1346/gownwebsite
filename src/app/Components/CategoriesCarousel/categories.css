@@ -59,6 +59,10 @@
   color: #333;
 }
 
+.swiper-pagination{
+  bottom:-6px !important;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .categories-section h2 {
@@ -81,6 +85,25 @@
   .category-item p {
       font-size: 16px;
   }
+
+  .swiper-button-prev{
+     top: 70px !important;
+     left: -10px !important;
+    height:27px;
+
+  }
+
+.swiper-button-next{
+  top: 70px !important;
+  right: -10px !important;
+ height:27px;
+}
+
+.swiper-pagination{
+  bottom:-6px !important;
+}
+
+
 }
 
 @media (max-width: 480px) {
