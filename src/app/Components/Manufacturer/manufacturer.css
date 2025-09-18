@@ -44,15 +44,20 @@
     }
   }
   @media (max-width: 768px) {
+    .ManufacturerTitle{
+      text-align: center;
+    }
     .mobileFrame {
       width: 200px;
       height: 380px;
+      margin: 40px 0px;
     }
   }
   @media (max-width: 576px) {
     .mobileFrame {
       width: 180px;
       height: 340px;
+      margin: 40px 0px;
     }
   }
   

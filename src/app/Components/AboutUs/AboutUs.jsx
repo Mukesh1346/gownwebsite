@@ -67,7 +67,7 @@ export default function AboutUs() {
 
           <div className="col-md-3 col-6">
             <div className="stat-card">
-              <CountOnView end={25} duration={1800} className="stat-number" suffix="+" />
+              <CountOnView end={15} duration={1800} className="stat-number" suffix="+" />
               <p className="stat-label">Years of Experience</p>
             </div>
           </div>

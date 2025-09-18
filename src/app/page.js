@@ -25,6 +25,7 @@ export default function Home() {
         <Animation animation="fadeUp" once={false}>
         <SupplyUniform />
         </Animation>
+        <Manufacturer/>
 
         <Animation animation="fadeUp" once={false}>
         <WhyChooseUs />
@@ -39,7 +40,7 @@ export default function Home() {
         </Animation>
         <Testimonials />
  
-      <Manufacturer/>
+    
 
 
       </div>

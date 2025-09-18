@@ -22,6 +22,8 @@ export default function CategoriesCarousel() {
             { id : 4,name: "Faculty Doctoral-tams", img: item4 },
             { id : 5,name: "Master Degree", img: item5 },
             { id : 6,name: "Medals", img: item3 },
+            { id : 7,name: "Medals", img: item4 },
+            { id : 8,name: "Medals", img: item5 },
           ];
         
   return (
@@ -29,16 +31,16 @@ export default function CategoriesCarousel() {
       <h2>Top Categories</h2>
       <div className="categories-carousel">
         <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
+          modules={[ Pagination, Autoplay]}
           spaceBetween={30}
           slidesPerView={4}
           navigation
           pagination={{ clickable: true }}
           autoplay={{ delay: 3000 }}
           breakpoints={{
-            320: { slidesPerView: 2 },
+            320: { slidesPerView: 3 },
             640: { slidesPerView: 3 },
-            1024: { slidesPerView: 4 },
+            1024: { slidesPerView: 6 },
           }}
         >
           {categories.map((item, idx) => (

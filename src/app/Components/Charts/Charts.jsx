@@ -16,7 +16,7 @@ export default function Charts() {
             {/* Left: Text */}
             <div className="col-md-7">
              
-             <b>📏 How to Measure for Your Gown </b>
+             <h3> How to Measure for Your Gown </h3>
 
 <ul>
   <li>Follow these simple steps to ensure your gown fits perfectly:</li>
@@ -91,7 +91,7 @@ export default function Charts() {
             </div>
             <div className="col-md-7">
               <div>
-             <b> Measuring Instructions for Choir Gowns</b>
+             <h3>Measuring Instructions for Choir Gowns</h3>
 
    <ul className='lineHeight'>
     <li>Height  Measure from the top of the head to the floor while wearing performance shoes.</li>

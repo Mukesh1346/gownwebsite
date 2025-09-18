@@ -73,7 +73,7 @@ color:gray;
   .section-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--themeColor);
+    /* color: var(--themeColor); */
   }
   .section-subtitle {
     max-width: 700px;
@@ -82,7 +82,7 @@ color:gray;
     font-size: 1.1rem;
   }
   .section-subtitle span {
-    color:var(--themeColor);
+    color:green;
     font-weight: 600;
   }
   .stat-card {
@@ -100,7 +100,7 @@ color:gray;
   .stat-number {
     font-size: 2.5rem;
     font-weight: 700;
-    color:var(--themeColor);
+    color:white;
   }
   .stat-label {
     margin-top: 8px;
@@ -138,7 +138,7 @@ color:gray;
 .section-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color:var(--themeColor);
+  color:white;
 }
 
 .countSec{

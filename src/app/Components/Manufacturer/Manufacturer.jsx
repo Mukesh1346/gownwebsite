@@ -13,7 +13,7 @@ export default function Manufacturer() {
               <h2 className="fw-bold mb-3 text-primary">
                 Leading academic &amp; church apparel manufacturer
               </h2>
-              <h5 className="fw-semibold mb-3">Why Choose Capstole?</h5>
+              <h5 className="fw-semibold mb-3 ManufacturerTitle">Why Choose Capstole?</h5>
               <ul className="text-muted ps-3">
                 <li>Specialized in <strong>convocational gowns, hoods, and stoles</strong></li>
                 <li>Crafted with <strong>premium fabrics</strong> ensuring durability & comfort</li>
@@ -24,7 +24,7 @@ export default function Manufacturer() {
             </div>
 
             {/* Center Video Frame */}
-            <div className="col-md-4 d-flex justify-content-center">
+            <div className="col-md-4 d-flex  justify-content-center">
               <div className="mobileFrame">
                 <video className="reel-video" autoPlay loop muted playsInline>
                   <source src="/video2.mp4" type="video/mp4" />
@@ -35,7 +35,7 @@ export default function Manufacturer() {
 
             {/* Right Text Section */}
             <div className="col-md-4 d-flex flex-column justify-content-center">
-              <h5 className="fw-semibold mb-3">Our Commitment</h5>
+              <h5 className="fw-semibold ManufacturerTitle mb-3">Our Commitment</h5>
               <ul className="text-muted ps-3">
                 <li>Delivering <strong>on-time solutions</strong> for convocations & ceremonies</li>
                 <li>Expert tailoring that ensures a <strong>perfect academic look</strong></li>
