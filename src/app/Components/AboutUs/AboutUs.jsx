@@ -51,7 +51,7 @@ export default function AboutUs() {
 
 <section className="about-stats">
       <div className="container text-center">
-        <h2 className="section-title">Why Choose Us</h2>
+        <h2 className="section-title text-light">Why Choose Us</h2>
         <p className="section-subtitle">
           We specialize in premium <span>convocational gowns</span>, combining
           tradition, comfort, and elegance for graduates worldwide.
