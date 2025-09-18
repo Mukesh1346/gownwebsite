@@ -1,0 +1,58 @@
+.mobileFrame {
+    width: 260px;
+    height: 500px;
+    border: 12px solid navy;
+    border-radius: 40px;
+    overflow: hidden;   /* important to clip video */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    background: #000;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+  }
+  
+  /* Make video fill frame */
+  .mobileFrame .reel-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* ensures video fills nicely */
+    border-radius: inherit; /* match rounded corners */
+  }
+  
+  /* Animated glow */
+  .mobileFrame::after {
+    content: "";
+    position: absolute;
+    inset: -10px;
+    border-radius: 45px;
+    background: radial-gradient(rgba(0, 0, 255, 0.2), transparent 70%);
+    animation: pulseGlow 3s infinite ease-in-out;
+    z-index: -1;
+  }
+  
+  .mobileFrame:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+  }
+  
+  @media (max-width: 992px) {
+    .mobileFrame {
+      width: 220px;
+      height: 420px;
+    }
+  }
+  @media (max-width: 768px) {
+    .mobileFrame {
+      width: 200px;
+      height: 380px;
+    }
+  }
+  @media (max-width: 576px) {
+    .mobileFrame {
+      width: 180px;
+      height: 340px;
+    }
+  }
+  

@@ -10,6 +10,7 @@ import Products from "./Components/Products/Products";
 import FAQ from "./Components/FAQ/FAQ";
 import WhyChooseUs from "./Components/WhyChooseUs/WhyChooseUs";
 import Animation from '@/app/Components/Animation/Animation'
+import Manufacturer from "./Components/Manufacturer/Manufacturer";
 
 
 
@@ -37,6 +38,10 @@ export default function Home() {
         <FAQ />
         </Animation>
         <Testimonials />
+ 
+      <Manufacturer/>
+
+
       </div>
     </>
   );

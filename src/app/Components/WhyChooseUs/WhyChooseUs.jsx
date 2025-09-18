@@ -35,8 +35,8 @@ export default function WhyChooseUs() {
                                     <div className="col-md-3 " key={index}>
                                         <div className='cardSecDetils '>
                                             <div className='d-flex justify-content-center'><Image src={item.icon} alt={item.title} className='iconImg text-light' height={100} width={100} /></div>
-                                            <h4>{item.title}</h4>
-                                            <p>{item.subtitle}</p>
+                                            <h4 className='text-light'>{item.title}</h4>
+                                            <p className='text-light'>{item.subtitle}</p>
                                         </div>
                                     </div>
                                 ))

@@ -1,5 +1,5 @@
 .footer-sec {
-    background-color: #1d1d1d;
+    background-color:navy;
     color: #ccc;
   }
   
@@ -8,7 +8,7 @@
   }
   
   .footer-heading {
-    color:var(--themeColor);
+    color:white;
     font-weight: bold;
     margin-bottom: 15px;
   }
@@ -22,7 +22,7 @@
   }
   
   .footer-link:hover {
-    color:var(--themeColor);
+    color:brown;
   }
   
   .footer-bottom {
@@ -45,7 +45,7 @@
   }
   
   .social-icon:hover {
-    background: var(--themeColor);
+    background:brown;
   }
   
   @media (max-width:768px){

@@ -12,6 +12,12 @@
   object-fit: cover;
   border: 2px solid transparent;
   cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.product-details .thumbnail:hover {
+  transform: scale(1.05);
 }
 
 .product-details .thumbnail.active {
@@ -20,7 +26,7 @@
 
 .product-details .main-image img {
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   border-radius: 8px;
 }
 
@@ -55,16 +61,15 @@
   .product-details .row {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
-  .thumbnail-list{
-    gap:40px !important;
-  }
   .product-details .thumbnail-list {
     flex-direction: row;
     margin: 10px 0;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 15px !important;
   }
 
   .product-details .thumbnail {
@@ -78,7 +83,12 @@
 
   .details-box {
     width: 100% !important;
-    margin-top: 20px !important;
+    margin-top: 15px !important;
+    text-align: center;
+  }
+
+  .product-details .price {
+    justify-content: center;
   }
 }
 
@@ -87,25 +97,17 @@
     width: 40px;
     height: 55px;
   }
-  .custom-modal{
-    margin-top: 60px !important;
-  }
 
-  .mainImage{
-    height:200px;
+  .mainImage {
+    height: 200px;
+    object-fit: contain;
   }
 
   .details-box {
     text-align: center;
+    padding: 0 10px;
   }
 
-  .price{
-    justify-content: center;
-  }
-
-  .quantity {
-    margin-bottom: 0px !important;;
-  }
   .product-details .current-price {
     font-size: 18px;
   }
@@ -119,31 +121,13 @@
     padding: 4px;
   }
 
-
-  .custom-modal-overlay {
-    display: inline;
-    align-items: center ;       /* vertical center on mobile */
-    justify-content: center;    /* horizontal center on mobile */
-    padding: 0px;
+  .quantity {
+    margin-bottom: 0px !important;
+    justify-content: center;
   }
 
-  .thumbnail-list{
-    gap:40px !important;
-  }
-
-  .custom-modal {
-    width: 95%;
-    padding: 15px;
-    margin-top: 40px ;              /* perfect vertical + horizontal centering */
-  }
-
-  .modal-header h5 {
-    font-size: 16px;
-  }
-
-  .submitBtn {
-    font-size: 14px;
-    padding: 10px;
+  .thumbnail-list {
+    gap: 12px !important;
   }
 }
 
@@ -153,10 +137,10 @@
   inset: 0;
   background: rgba(0,0,0,0.5);
   display: flex;
-  align-items: flex-start; /* default desktop alignment */
+  align-items: center; /* center vertically */
   justify-content: center;
   z-index: 1050;
-  padding: 0;
+  padding: 10px;
 }
 
 .custom-modal {
@@ -169,17 +153,21 @@
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  margin: auto;
 }
 
 .modal-header {
-  background-color: #c7baed;
+  background-color: #2d40c1;
   padding: 10px !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 12px;
   margin-bottom: 10px;
+}
+
+.modal-header h5 {
+  font-size: 18px;
+  margin: 0;
 }
 
 .btn-close {
@@ -204,7 +192,7 @@
   margin-bottom: 10px;
 }
 
-/* Sticky footer for submit button on mobile */
+/* Sticky footer for submit button */
 .modal-footer {
   position: sticky;
   bottom: 0;
@@ -212,4 +200,3 @@
   padding-top: 10px;
   border-top: 1px solid #ccc;
 }
-

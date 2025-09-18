@@ -4,6 +4,7 @@ import "./ProductDetails.css";
 import { useParams } from "next/navigation";
 import Image from "next/image";
 import Products from "@/app/Components/Products/Products";
+import Swal from "sweetalert2"; // ✅ you forgot to import
 
 import pic1 from "@/app/Images/items/item1.webp";
 import pic2 from "@/app/Images/items/item2.webp";
@@ -32,6 +33,73 @@ export default function ProductDetails() {
 
   const [selectedImage, setSelectedImage] = useState(product?.images[0] || null);
   const [showModal, setShowModal] = useState(false);
+
+  const [formdata, setFormData] = useState({
+    name: "",
+    phone: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  // ✅ fixed handleChange
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  // ✅ fixed handleSubmit
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    try {
+      const res = await fetch("/api/sendMail", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" }, // fixed spelling
+        body: JSON.stringify(formdata),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        Swal.fire({
+          title: "Form Submitted",
+          text: "Our Team Will Connect to You Shortly.",
+          icon: "success",
+          confirmButtonText: "OK",
+        });
+
+        setFormData({
+          name: "",
+          phone: "",
+          message: "",
+        });
+        setShowModal(false); // close modal after success
+      } else {
+        Swal.fire({
+          title: "Error!",
+          text: "Sorry Our Server is Busy. Please Try again",
+          icon: "error",
+          confirmButtonText: "OK",
+        });
+      }
+    } catch (error) {
+      console.error(error);
+      Swal.fire({
+        title: "Error!",
+        text: "Something went wrong.",
+        icon: "error",
+        confirmButtonText: "OK",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
 
   if (!product) return <div className="text-center my-5"> Product Not Found !</div>;
 
@@ -64,20 +132,20 @@ export default function ProductDetails() {
 
               <div className="price">
                 <span className="current-price">${product.price.toFixed(2)}</span>
-                <span className="old-price">${product.oldPrice.toFixed(2)}</span>
+                <span className="old-price text-success">${product.oldPrice.toFixed(2)}</span>
               </div>
 
               <div className="rating">⭐ {product.rating} ({product.reviews} Reviews)</div>
 
-              <p><b>Color:</b> {product.color}</p>
+              <p><b className="me-2">Color:</b> {product.color}</p>
 
               {/* Quantity */}
-              <div className="quantity my-3">
-                <b>Quantity:</b>
+              <div className="quantity gap-2 my-3">
+                <b className="me-2">Quantity :</b>
                 <input type="number" defaultValue={1} min={1} />
               </div>
 
-              <button className="btn btn-dark w-100 mt-3" onClick={() => setShowModal(true)}>
+              <button className="btn btn-dark w-75 mt-3" onClick={() => setShowModal(true)}>
                 Whats Your Query
               </button>
             </div>
@@ -95,34 +163,50 @@ export default function ProductDetails() {
         <div className="custom-modal-overlay">
           <div className="custom-modal">
             <div className="modal-header">
-              <h5 className="mt-2">Customer Query</h5>
+              <h5 className="mt-2 text-light">Customer Query</h5>
               <button className="btn-close" onClick={() => setShowModal(false)}></button>
             </div>
             <div className="modal-body">
-              <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  alert("Query submitted!");
-                  setShowModal(false);
-                }}
-              >
+              <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                   <label className="form-label">Name</label>
-                  <input type="text" className="form-control" required />
+                  <input
+                    type="text"
+                    name="name" // ✅ added
+                    className="form-control"
+                    onChange={handleChange}
+                    value={formdata.name}
+                    required
+                  />
                 </div>
-                {/* <div className="mb-3">
-                  <label className="form-label">Email</label>
-                  <input type="email" className="form-control" required />
-                </div> */}
+
                 <div className="mb-3">
                   <label className="form-label">Phone</label>
-                  <input type="tel" className="form-control" required />
+                  <input
+                    type="tel"
+                    name="phone" // ✅ added
+                    className="form-control"
+                    onChange={handleChange}
+                    value={formdata.phone}
+                    required
+                  />
                 </div>
+
                 <div className="mb-3">
                   <label className="form-label">Your Query</label>
-                  <textarea className="form-control" rows="3" required></textarea>
+                  <textarea
+                    className="form-control"
+                    rows="3"
+                    name="message" // ✅ added
+                    onChange={handleChange}
+                    value={formdata.message}
+                    required
+                  ></textarea>
                 </div>
-                <button type="submit" className="btn submitBtn w-100">Submit</button>
+
+                <button type="submit" className="btn submitBtn w-100 text-light" disabled={loading}>
+                  {loading ? "Submitting..." : "Submit"}
+                </button>
               </form>
             </div>
           </div>

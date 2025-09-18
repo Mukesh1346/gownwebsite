@@ -1,0 +1,16 @@
+/* ================= Gown Section ================= */
+.gown-section {
+    /* background: linear-gradient(135deg, #f8f9fb 0%, #ffffff 100%); */
+    border-radius: 20px;
+    padding: 60px 20px;
+    /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); */
+    transition: all 0.3s ease;
+  }
+  
+  .gown-section:hover {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  }
+  .lineHeight{
+   line-height: 40px;
+  }
+  

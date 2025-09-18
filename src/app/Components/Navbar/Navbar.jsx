@@ -9,7 +9,7 @@ import { MdWifiCalling3 } from "react-icons/md";
 export default function Navbar() {
   return (
   <>
-   <div style={{ backgroundColor: "#A997DF"}}>
+   <div style={{ backgroundColor: "var(--themeColor)"}}>
   <div className="container">
     <div className="row">
       <div className="col-md-6"></div>
@@ -41,10 +41,10 @@ export default function Navbar() {
       <div className="container">
         {/* Logo */}
         <Link href="/" className="navbar-brand d-flex flex-column lh-1">
-          <span className="fw-bold BrandName fs-4" >CAPSTOLE</span>
+          <span className="fw-bold BrandName fs-4" >Capstole</span>
           {/* <span className="fw-bold text-dark">uniform wala</span> */}
           <small className="text-muted">
-            A <span className="text-danger fw-semibold">BuzzUniforms</span> Company
+             <span className="text-danger fw-semibold">    Graduation &church </span> Apparel
           </small>
         </Link>
 
@@ -168,9 +168,9 @@ export default function Navbar() {
             </li>
 
             {/* Dropdown 2 */}
-            <li className="nav-item dropdown">
+            {/* <li className="nav-item dropdown">
               <Link
-                href="#"
+                href="/Pages/knowledge"
                 className="nav-link dropdown-toggle"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -190,8 +190,12 @@ export default function Navbar() {
                   </Link>
                 </li>
               </ul>
+            </li> */}
+            <li className="nav-item">
+              <Link href="/Pages/knowledge" className="nav-link">
+                Knowledge
+              </Link>
             </li>
-
             <li className="nav-item">
               <Link href="/Pages/contact-us" className="nav-link">
                 Contact Us

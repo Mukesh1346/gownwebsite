@@ -11,17 +11,15 @@ export default function Footer() {
           {/* Left Section */}
           <div className="col-md-4 mb-4">
             <Link href="/" className="navbar-brand d-flex flex-column lh-1">
-              <span className="fw-bold footer-heading fs-4">CAPSTOLE</span>
-              {/* <span className="fw-bold text-dark">uniform wala</span> */}
-              <small className="text-muted">
-                A <span className="text-warning fw-semibold">BuzzUniforms</span> Company
+              <span className="fw-bold footer-heading fs-4 mb-0 p-0">CAPSTOLE</span>
+              {/* <span className="fw-bold text-dark"> Graduation &church apparel</span> */}
+              <small className="mb-2 text-light">
+                A <span className="text-warning fw-semibold  ">Graduation &church </span> apparel
               </small>
             </Link>
 
             <p className="companydetails">
-              Established in 2002, we have more than 15 years in graduation & church
-              robes and accessories making, we are factory here, so the quality and
-              delivery date can be controlled by ourselves.
+            Established in 2010, we have more than 15 years  of experience  in graduation & church robes and accessories making, we are factory here, so the quality and delivery date can be controlled by ourselves.
             </p>
           </div>
 
@@ -52,7 +50,8 @@ export default function Footer() {
             <h5 className="footer-heading">Contact Us</h5>
             <p className="mb-1">
               Capstole textile Co.Ltd <br />
-              <span className="footer-heading">Address:</span> <br /> Tuglakabad extn North.Delhi - 110019
+              <span className="footer-heading">Address:</span> <br /> TA-96 Lane.1
+              Tuglakabad Extn N.Delhi-110019
             </p>
             <p className="mb-1"><span className="footer-heading">Tel:</span> +91-9318311035</p>
             <p className="mb-1"> <span className="footer-heading">Email:</span> sales@capstole .com</p>

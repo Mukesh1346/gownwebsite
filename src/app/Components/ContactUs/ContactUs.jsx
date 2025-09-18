@@ -143,7 +143,7 @@ export default function ContactUs() {
 
       <div className="container mt-5">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.6243092123127!2d77.08410077496043!3d28.730771579613716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d07440faeeedd%3A0x7fd3b4b030819bdf!2sDigi%20India%20Solutions!5e0!3m2!1sen!2sin!4v1757765853741!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3505.433100873066!2d77.25504407549694!3d28.52669907572268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDMxJzM2LjEiTiA3N8KwMTUnMjcuNCJF!5e0!3m2!1sen!2sin!4v1758094852038!5m2!1sen!2sin"
           className="w-100"
           height="450"
           allowFullScreen=""
