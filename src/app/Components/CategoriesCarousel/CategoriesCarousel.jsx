@@ -15,11 +15,11 @@ import "./categories.css"; // import external css
 import Link from "next/link";
 
 export default function CategoriesCarousel() {
-    const categories = [
+    const categories = [ 
             { id : 1,name: "Doctoral Gowns", img: item1},
             { id : 2,name: "Doctoral Packages", img: item2 },
             { id : 3,name: "High School", img: item3 },
-            { id : 4,name: "Faculty Doctoral-tams", img: item4 },
+            { id : 4,name: "Faculty Doctoral", img: item4 },
             { id : 5,name: "Master Degree", img: item5 },
             { id : 6,name: "Medals", img: item3 },
             { id : 7,name: "Medals", img: item4 },

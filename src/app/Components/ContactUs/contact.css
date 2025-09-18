@@ -1,9 +1,20 @@
 .contact-form-section {
-    background: #fff;
+
+ 
     text-align: left;
   }
 
+  .formSection{
+    background-image: url("../../Images/Banner1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+  }
+
   .form-container{
+    margin-left: 160px !important;
+    padding:50px 0px;
+   
     width: 50% !important;
   }
   
@@ -57,6 +68,11 @@
   @media (max-width : 768px){
     .form-container{
       width: 100% !important;
+    }
+
+    .form-container{
+      margin-left: 0px !important;
+      padding: 10px 0px;
     }
     
     .form-container p{

@@ -73,72 +73,74 @@ export default function ContactUs() {
 
   return (
     <div className="contact-form-section py-3">
-      <div className="container form-container">
-        <h2 className="form-title">Send Us Message</h2>
-        <p className="form-subtitle">
-          Have Questions? Send Us A Message, And We'll Get Back To You Soon!
-        </p>
+      <div className="formSection">
+        <div className="container form-container">
+          <h2 className="form-title">Send Us Message</h2>
+          <p className="form-subtitle">
+            Have Questions? Send Us A Message, And We'll Get Back To You Soon!
+          </p>
 
-        <form className="contact-form mt-4" onSubmit={handleSubmit}>
-          <div className="mb-3">
-            <input
-              type="text"
-              name="name"
-              className="form-control custom-input"
-              placeholder="Name*"
-              value={formdata.name}
-              onChange={handleChange}
-              required
-            />
-          </div>
+          <form className="contact-form mt-4" onSubmit={handleSubmit}>
+            <div className="mb-3">
+              <input
+                type="text"
+                name="name"
+                className="form-control custom-input"
+                placeholder="Name*"
+                value={formdata.name}
+                onChange={handleChange}
+                required
+              />
+            </div>
 
-          <div className="mb-3">
-            <input
-              type="email"
-              name="email"
-              className="form-control custom-input"
-              placeholder="Email*"
-              value={formdata.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
+            <div className="mb-3">
+              <input
+                type="email"
+                name="email"
+                className="form-control custom-input"
+                placeholder="Email*"
+                value={formdata.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
 
-          <div className="mb-3">
-            <input
-              type="text"
-              name="phone"
-              className="form-control custom-input"
-              placeholder="Phone number*"
-              value={formdata.phone}
-              onChange={handleChange}
-              required
-            />
-          </div>
+            <div className="mb-3">
+              <input
+                type="text"
+                name="phone"
+                className="form-control custom-input"
+                placeholder="Phone number*"
+                value={formdata.phone}
+                onChange={handleChange}
+                required
+              />
+            </div>
 
-          <div className="mb-3">
-            <textarea
-              className="form-control custom-input"
-              rows="4"
-              name="message"
-              placeholder="Comment*"
-              value={formdata.message}
-              onChange={handleChange}
-              required
-            ></textarea>
-          </div>
+            <div className="mb-3">
+              <textarea
+                className="form-control custom-input"
+                rows="4"
+                name="message"
+                placeholder="Comment*"
+                value={formdata.message}
+                onChange={handleChange}
+                required
+              ></textarea>
+            </div>
 
-          <div className="form-check mb-3">
-            <input type="checkbox" className="form-check-input" id="saveInfo" />
-            <label className="form-check-label" htmlFor="saveInfo">
-              Save my name, email, and website in this browser.
-            </label>
-          </div>
+            <div className="form-check mb-3">
+              <input type="checkbox" className="form-check-input" id="saveInfo" />
+              <label className="form-check-label" htmlFor="saveInfo">
+                Save my name, email, and website in this browser.
+              </label>
+            </div>
 
-          <button type="submit" className="btn send-btn" disabled={loading}>
-            {loading ? "Sending..." : "SEND"}
-          </button>
-        </form>
+            <button type="submit" className="btn send-btn" disabled={loading}>
+              {loading ? "Sending..." : "SEND"}
+            </button>
+          </form>
+        </div>
       </div>
 
       <div className="container mt-5">
