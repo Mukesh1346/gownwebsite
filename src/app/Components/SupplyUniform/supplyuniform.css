@@ -55,7 +55,7 @@
 .supplyCardImg {
   width: 100%;
   height: 220px;
-  object-fit: cover; /* changed from contain for a better look */
+  object-fit: contain; 
   border-radius: 6px;
   margin-bottom: 15px;
 }

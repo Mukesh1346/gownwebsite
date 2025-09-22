@@ -1,10 +1,10 @@
 import React from "react";
 import "./supplyuniform.css";
 import Image from "next/image";
-import item1 from '@/app/Images/items/item1.webp'
-import item2 from '@/app/Images/items/item2.webp'
-import item3 from '@/app/Images/items/item3.webp'
-import item4 from '@/app/Images/items/item4.webp'
+import item1 from '@/app/Images/items/item13.png'
+import item2 from '@/app/Images/items/item14.png'
+import item3 from '@/app/Images/items/item16.png'
+
 
 export default function SupplyUniform() {
   const cards = [
