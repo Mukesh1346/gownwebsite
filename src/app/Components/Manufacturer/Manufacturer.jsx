@@ -15,7 +15,7 @@ export default function Manufacturer() {
               </h2>
               <h5 className="fw-semibold mb-3 ManufacturerTitle">Why Choose Capstole?</h5>
               <ul className="text-muted ps-3">
-                <li>Specialized in <strong>convocational gowns, hoods, and stoles</strong></li>
+                <li>Specialized in <strong>Graduation & Church Apparel</strong></li>
                 <li>Crafted with <strong>premium fabrics</strong> ensuring durability & comfort</li>
                 <li>Trusted by <strong>universities and churches worldwide</strong></li>
                 <li>Custom sizing and designs tailored for every requirement</li>

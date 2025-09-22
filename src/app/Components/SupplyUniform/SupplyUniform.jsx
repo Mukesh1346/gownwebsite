@@ -10,20 +10,20 @@ export default function SupplyUniform() {
   const cards = [
     {
       img: item1, // put images in public/uniforms/
-      title: "Corporate Uniforms",
-      desc: "From security personnel to top-level executives, our corporate uniforms are designed to cater to all levels of an organization.",
+      title: "Mortar Board Graduation Caps",
+      desc: "Celebrate achievement with classic mortar board caps. A timeless symbol of knowledge, success, and new beginnings.",
       link: "/Pages/contact-us",
     },
     {
       img: item2,
-      title: "Hospital Uniforms",
-      desc: "We are a high-quality uniform supplier in Mumbai for hospital staff, including doctors, nurses, and support teams.",
+      title: "Stoles",
+      desc: "Honor your accomplishments with elegant graduation stoles.Designed to add pride, tradition, and style to your ceremony.",
       link: "/Pages/contact-us",
     },
     {
       img: item3,
-      title: "Hotel Uniforms",
-      desc: "Enhance the elegance of your hotel with our hotel uniforms. Our uniforms are durable and aligned with your brand’s aesthetics.",
+      title: "Cassock",
+      desc: "A traditional clerical garment symbolizing devotion and dignity.Perfectly tailored for formal religious and ceremonial occasions.",
       link: "/Pages/contact-us",
     },
   ];
@@ -36,19 +36,19 @@ export default function SupplyUniform() {
           <div className="supplyLeftSecText">
             <div className="supplyTitle">
               <h2>
-                We Supply Uniforms <br />{" "}
-                <span className="spanText">Across Industries</span>
+                We Supply Our Products <br />{" "}
+                <span className="spanText">Across the Globe</span>
               </h2>
             </div>
 
             <div className="supplyPara">
               <p>
-                At Uniform Supplier, we understand the significance of a uniform in
+                At capstole, we understand the significance of a uniform in
                 creating a professional image and fostering team spirit. Our smooth
                 supply system ensures timely delivery of products designed to evoke
-                a sense of pride among wearers. As a leading uniform manufacturer in
-                Mumbai, India, we offer customized solutions tailored to the specific
-                needs of various sectors:
+                a sense of pride among wearers. As a leading Graduation & Church Apparel in
+                Delhi , India, we offer customized solutions tailored to the specific
+                needs of various Clients:
               </p>
             </div>
           </div>

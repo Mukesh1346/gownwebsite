@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Left Section */}
           <div className="col-md-4 mb-4">
             <Link href="/" className="navbar-brand d-flex flex-column lh-1">
-              <span className="fw-bold footer-heading fs-4 mb-0 p-0">CAPSTOLE</span>
+              <span className="fw-bold footer-heading fs-4 mb-0 p-0"> capstole</span>
               {/* <span className="fw-bold text-dark"> Graduation &church apparel</span> */}
               <small className="mb-2 text-light">
                 A <span className="text-warning fw-semibold  ">Graduation &church </span> apparel
@@ -38,10 +38,10 @@ export default function Footer() {
           <div className="col-md-3 mb-4">
             <h5 className="footer-heading">Products</h5>
             <ul className="list-unstyled footerUl">
-              <li><a href="#" className="footer-link">Graduation Cap and Gown</a></li>
-              <li><a href="#" className="footer-link">Academic Regalia</a></li>
-              <li><a href="#" className="footer-link">Graduation Accessories</a></li>
-              <li><a href="#" className="footer-link">Choir Robe and Clergy Attire</a></li>
+              <li><a href="#" className="footer-link">Graduation Caps</a></li>
+              <li><a href="#" className="footer-link">Stoles</a></li>
+              <li><a href="#" className="footer-link">Choir and Clergy Gowns</a></li>
+              <li><a href="#" className="footer-link">Tassles & year Charm</a></li>
             </ul>
           </div>
 
@@ -49,8 +49,8 @@ export default function Footer() {
           <div className="col-md-3 contactFooterSec mb-4">
             <h5 className="footer-heading">Contact Us</h5>
             <p className="mb-1">
-              Capstole textile Co.Ltd <br />
-              <span className="footer-heading">Address:</span> <br /> TA-96 Lane.1
+              Capstole <br />
+              <span className="footer-heading">Address:</span>TA-96 Lane.1
               Tuglakabad Extn N.Delhi-110019
             </p>
             <p className="mb-1"><span className="footer-heading">Tel:</span> +91-9318311035</p>

@@ -38,7 +38,7 @@ export default function AboutUs() {
                                 < MdContactPhone className="fs-3 me-3 text-light"/>
                             <h3 className="text-light">Contact Us</h3>
                             </div>
-                          <p>At CAPSTOLE , we take pride in being a trusted manufacturer and supplier of high-quality convocational gowns and accessories. With years of experience, we understand the significance of graduation ceremonies and aim to make them truly memorable.Our gowns are crafted with premium fabrics, perfect stitching, and elegant designs that symbolize dignity and achievement. Whether its for universities, colleges, or schools, we provide customized gowns, hoods, and caps that meet international standards. We are committed to excellence, timely delivery, and unmatched customer satisfaction—because every milestone deserves to be celebrated in style.</p>
+                          <p>At capstole , we take pride in being a trusted manufacturer and supplier of high-quality convocational gowns and accessories. With years of experience, we understand the significance of graduation ceremonies and aim to make them truly memorable.Our gowns are crafted with premium fabrics, perfect stitching, and elegant designs that symbolize dignity and achievement. Whether its for universities, colleges, or schools, we provide customized gowns, hoods, and caps that meet international standards. We are committed to excellence, timely delivery, and unmatched customer satisfaction—because every milestone deserves to be celebrated in style.</p>
                           </div>
                         </div>
                     </div>
@@ -53,14 +53,14 @@ export default function AboutUs() {
       <div className="container text-center">
         <h2 className="section-title text-light">Why Choose Us</h2>
         <p className="section-subtitle">
-          We specialize in premium <span>convocational gowns</span>, combining
+          We specialize in premium <span>Graduation & Church Apparel</span>, combining
           tradition, comfort, and elegance for graduates worldwide.
         </p>
 
         <div className="row countSec  g-4 justify-content-center">
           <div className="col-md-3 col-6">
             <div className="stat-card">
-              <CountOnView end={15000} duration={2000} className="stat-number" suffix="+" />
+              <CountOnView end={200000} duration={2000} className="stat-number" suffix="+" />
               <p className="stat-label">Graduates Dressed</p>
             </div>
           </div>

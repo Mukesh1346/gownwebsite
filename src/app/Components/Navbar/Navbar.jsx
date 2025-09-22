@@ -44,7 +44,7 @@ export default function Navbar() {
           <span className="fw-bold BrandName fs-4" >Capstole</span>
           {/* <span className="fw-bold text-dark">uniform wala</span> */}
           <small className="text-muted">
-             <span className="text-danger fw-semibold">    Graduation &church </span> Apparel
+             <span className="text-danger fw-semibold">    Graduation & church </span> Apparel
           </small>
         </Link>
 

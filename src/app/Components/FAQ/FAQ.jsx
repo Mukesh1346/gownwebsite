@@ -5,9 +5,9 @@ import "./faq.css";
 
 const faqs = [
   {
-    question: "Do you provide custom design for convocation gowns?",
+    question: "Do you provide custom design for Your Products?",
     answer:
-      "Yes, we specialize in custom-designed convocation gowns tailored with your institutions logo, colors, and fabric preferences.",
+      "Yes, we offer custom design options tailored to your specific requirements. You can share your design ideas, logos, or branding details, and we will work with you to create products that perfectly match your vision.",
   },
   {
     question: "What fabric options are available?",
@@ -15,19 +15,14 @@ const faqs = [
       "We offer a variety of premium fabrics including polyester blends, satin finish, and eco-friendly options for maximum comfort and durability.",
   },
   {
-    question: "Can we rent gowns for convocation ceremonies?",
+    question: "Do you Ship Your Products  Across The Globe?",
     answer:
-      "Absolutely. We provide both purchase and rental options to suit your institutions requirements.",
-  },
-  {
-    question: "Do you ship gowns across India?",
-    answer:
-      "Yes, we deliver convocation gowns nationwide with assured quality packaging and timely delivery.",
+      "Yes, we deliver our products worldwide. No matter where you are located, we ensure safe and timely shipping through our trusted logistics partners. International customers can also track their orders and enjoy the same quality service as our local clients",
   },
   {
     question: "How early should we place an order?",
     answer:
-      "We recommend placing your order at least 4 6 weeks before the ceremony to ensure proper customization and delivery.",
+      "We recommend placing your order at least 4-6 weeks before the ceremony to ensure proper customization and delivery.",
   },
 ];
 

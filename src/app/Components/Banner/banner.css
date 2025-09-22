@@ -5,12 +5,13 @@
 .BannerImgSec{
     position: relative;
 }
- .overlayText{
-    position:absolute;
-    top: 290px;
-    left: 250px;
 
- }
+
+ .overlayText {
+    position: absolute;
+    top: 90px;
+    left: 100px;
+}
 
  .overlayText h3{
     color:white;
